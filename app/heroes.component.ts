@@ -4,9 +4,10 @@ import { Hero }                from './hero';
 import { HeroService }         from './hero.service';
 import { HeroDetailComponent } from './hero-detail.component';
 @Component({
+  moduleId: module.id,  
   selector: 'my-heroes',
-  templateUrl: 'app/heroes.component.html',
-  styleUrls:  ['app/heroes.component.css'],
+  templateUrl: 'heroes.component.html',
+  styleUrls:  ['heroes.component.css'],
   directives: [HeroDetailComponent]
 })
 export class HeroesComponent implements OnInit {
