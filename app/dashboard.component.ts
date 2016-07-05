@@ -4,16 +4,20 @@ import { Router } from '@angular/router-deprecated';
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
+import {AlertComponent, DATEPICKER_DIRECTIVES} from 'ng2-bootstrap/ng2-bootstrap';
+
+
 @Component({
   moduleId: module.id,
   selector: 'my-dashboard',
   templateUrl: 'dashboard.component.html',
+  directives: [AlertComponent, DATEPICKER_DIRECTIVES], 
   styleUrls: ['dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
 
   heroes: Hero[] = [];
-
+date: Date = new Date();
   constructor(
     private router: Router,
     private heroService: HeroService) {
