@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
-import { DashboardComponent }  from './dashboard.component';
-import { HeroesComponent }     from './heroes.component';
-import { HeroDetailComponent } from './hero-detail.component';
-import { HeroService }         from './hero.service';
+import { DashboardComponent }  from './dashboard/dashboard.component';
+import { HeroesComponent }     from './hero/heroes.component';
+import { HeroDetailComponent } from './hero/hero-detail.component';
+import { HeroService }         from './hero/hero.service';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
